@@ -1,0 +1,35 @@
+:root {
+  --dark-main: #1e1e1e;
+  --dark-secundary: #242424;
+  --light-main: #e5e5e5;
+  --light-main-alpha-84: #e5e5e584;
+  --light-main-alpha-75: #e5e5e575;
+  --light-secundary: #d9d9d9;
+  --color-main: #ee0000;
+  --font-main: "Josefin Sans Variable", Arial, Helvetica, sans-serif;
+  --font-title: "Rubik Distressed", var(--font-main);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--dark-main);
+  background-image: url("/images/background.webp");
+  background-position: 40% 45%;
+  color: var(--dark-secundary);
+  font-family: var(--font-main);
+
+  @media (width >= 600px) {
+    background-position: 50% 15%;
+  }
+}
+
+dialog {
+  border: none;
+  padding: 0;
+}

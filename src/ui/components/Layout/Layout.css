@@ -1,0 +1,29 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  height: 200px;
+  max-width: 300px;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  text-align: center;
+  font-weight: 300;
+  background-color: var(--color-main);
+  color: var(--light-main);
+
+  @media (width >= 600px) {
+    min-width: 600px;
+  }
+}
+
+.modal__text {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-title);
+  font-size: 2rem;
+}
