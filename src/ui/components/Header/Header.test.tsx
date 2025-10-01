@@ -16,9 +16,9 @@ describe("Given the Header component", () => {
       expect(pageTitle).toBeInTheDocument();
     });
 
-    test("Then it should show an image with 'Simulant la bandera del Japó, perfil del cap i part del coll del Godzilla de la pel·lícula Shin Godzilla (2016) sobre rodona vermella' as alternative text", () => {
+    test("Then it should show an image with 'Perfil del cap i part del coll del Godzilla sobre rodona vermella' as alternative text", () => {
       const expectedAltText =
-        "Simulant la bandera del Japó, perfil del cap i part del coll del Godzilla de la pel·lícula Shin Godzilla (2016) sobre rodona vermella";
+        "Perfil del cap i part del coll del Godzilla sobre rodona vermella";
 
       render(<Header />);
 

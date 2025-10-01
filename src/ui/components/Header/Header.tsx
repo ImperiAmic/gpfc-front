@@ -8,10 +8,10 @@ const Header: React.FC = () => {
     <header className="header-container">
       <img
         className="icon"
-        alt="Simulant la bandera del Japó, perfil del cap i part del coll del Godzilla de la pel·lícula Shin Godzilla (2016) sobre rodona vermella"
+        alt="Perfil del cap i part del coll del Godzilla sobre rodona vermella"
         srcSet={`${iconMobile} 86w, ${iconDesktop} 84w`}
         sizes="(max-width: 599px) 86px, 84px"
-        src="/images/icon-mobile.webp"
+        src={iconMobile}
         height={86}
         width={86}
       />
