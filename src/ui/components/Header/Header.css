@@ -1,0 +1,65 @@
+.header-container {
+  min-height: 9.375rem;
+  background-color: var(--light-main);
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icon {
+  height: 86px;
+  width: 86px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-name {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.title-surname {
+  font-size: 1.35rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.title-surname--desktop {
+  display: flex;
+  gap: 6px;
+}
+
+@media (width >= 600px) {
+  .header-container {
+    min-height: 8.25rem;
+    padding: 24px 0;
+  }
+
+  .icon {
+    height: 84px;
+    width: 84px;
+  }
+
+  .title-container {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .title-surname {
+    flex-direction: column;
+  }
+
+  .title-surname--desktop {
+    display: flex;
+    gap: 6px;
+    justify-content: space-between;
+  }
+}
