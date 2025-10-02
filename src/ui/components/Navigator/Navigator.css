@@ -1,0 +1,6 @@
+.navigator {
+  margin: 0 auto;
+  padding: 0 12px;
+  display: flex;
+  gap: 20px;
+}
