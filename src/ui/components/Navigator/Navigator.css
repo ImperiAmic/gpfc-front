@@ -1,6 +1,32 @@
-.navigator {
+.navigator--mobile {
+  display: flex;
+}
+
+.navigator__list--mobile {
   margin: 0 auto;
-  padding: 0 12px;
   display: flex;
   gap: 20px;
+}
+
+.navigator--desktop {
+  display: none;
+}
+
+@media (width >= 750px) {
+  .navigator--mobile {
+    display: none;
+  }
+
+  .navigator--desktop {
+    display: flex;
+  }
+
+  .navigator__list--desktop {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 3px;
+    column-gap: 10px;
+  }
 }

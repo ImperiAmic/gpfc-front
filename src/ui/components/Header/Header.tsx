@@ -9,8 +9,8 @@ const Header: React.FC = () => {
 
   return (
     <header className="header-container">
-      <div className="header-title">
-        <picture className="icon">
+      <div className="header__icon-title">
+        <picture className="header__icon">
           <source
             media="(max-width: 599px)"
             srcSet={`${iconMobile} 1x, ${iconMobileDpr} 2x`}
@@ -20,29 +20,27 @@ const Header: React.FC = () => {
             srcSet={`${iconDesktop} 1x, ${iconDesktopDpr} 2x`}
           />
           <img
-            className="icon"
+            className="header__icon"
             alt="Perfil del cap i part del coll del Godzilla sobre rodona vermella"
             src={iconMobile}
             height={86}
             width={86}
           />
         </picture>
-        <h1 aria-label="Godzilla Poblenou Fan Club">
-          <div className="title-container">
-            <div className="title-name">
-              <span>Godzilla</span>
+        <h1 className="header__title" aria-label="Godzilla Poblenou Fan Club">
+          <div className="header__title-name">
+            <span>Godzilla</span>
+          </div>
+          <div className="header__title-surname-first">
+            <div>
+              <span>Poblenou</span>
             </div>
-            <div className="title-surname">
+            <div className="header__title-surname-second">
               <div>
-                <span>Poblenou</span>
+                <span>Fan</span>
               </div>
-              <div className="title-surname--desktop">
-                <div>
-                  <span>Fan</span>
-                </div>
-                <div>
-                  <span>Club</span>
-                </div>
+              <div>
+                <span>Club</span>
               </div>
             </div>
           </div>
