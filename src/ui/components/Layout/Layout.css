@@ -2,6 +2,10 @@
   margin: 0 auto;
 }
 
+.page-container {
+  max-width: var(--max-width);
+}
+
 .modal {
   position: fixed;
   inset: 0;

@@ -8,6 +8,7 @@
   --color-main: #ee0000;
   --font-main: "Josefin Sans Variable", Arial, Helvetica, sans-serif;
   --font-title: "Rubik Distressed", var(--font-main);
+  --max-width: 1400px;
 }
 
 *,
@@ -20,7 +21,7 @@ body {
   margin: 0;
   background-color: var(--dark-main);
   background-image: url("/images/background.webp");
-  background-position: 40% 45%;
+  background-position: 40% 35%;
   color: var(--dark-secundary);
   font-family: var(--font-main);
 

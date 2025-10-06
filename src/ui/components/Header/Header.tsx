@@ -9,44 +9,46 @@ const Header: React.FC = () => {
 
   return (
     <header className="header-container">
-      <div className="header__icon-title">
-        <picture className="header__icon">
-          <source
-            media="(max-width: 599px)"
-            srcSet={`${iconMobile} 1x, ${iconMobileDpr} 2x`}
-          />
-          <source
-            media="(min-width: 600px)"
-            srcSet={`${iconDesktop} 1x, ${iconDesktopDpr} 2x`}
-          />
-          <img
-            className="header__icon"
-            alt="Perfil del cap i part del coll del Godzilla sobre rodona vermella"
-            src={iconMobile}
-            height={86}
-            width={86}
-          />
-        </picture>
-        <h1 className="header__title" aria-label="Godzilla Poblenou Fan Club">
-          <div className="header__title-name">
-            <span>Godzilla</span>
-          </div>
-          <div className="header__title-surname-first">
-            <div>
-              <span>Poblenou</span>
+      <div className="header-content">
+        <div className="header__icon-title">
+          <picture className="header__icon">
+            <source
+              media="(max-width: 599px)"
+              srcSet={`${iconMobile} 1x, ${iconMobileDpr} 2x`}
+            />
+            <source
+              media="(min-width: 600px)"
+              srcSet={`${iconDesktop} 1x, ${iconDesktopDpr} 2x`}
+            />
+            <img
+              className="header__icon"
+              alt="Perfil del cap i part del coll del Godzilla sobre rodona vermella"
+              src={iconMobile}
+              height={86}
+              width={86}
+            />
+          </picture>
+          <h1 className="header__title" aria-label="Godzilla Poblenou Fan Club">
+            <div className="header__title-name">
+              <span>Godzilla</span>
             </div>
-            <div className="header__title-surname-second">
+            <div className="header__title-surname-first">
               <div>
-                <span>Fan</span>
+                <span>Poblenou</span>
               </div>
-              <div>
-                <span>Club</span>
+              <div className="header__title-surname-second">
+                <div>
+                  <span>Fan</span>
+                </div>
+                <div>
+                  <span>Club</span>
+                </div>
               </div>
             </div>
-          </div>
-        </h1>
+          </h1>
+        </div>
+        <Navigator />
       </div>
-      <Navigator />
     </header>
   );
 };
