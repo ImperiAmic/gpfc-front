@@ -25,42 +25,42 @@ const Navigator: React.FC = () => {
           <li>
             <img
               src="/images/navigator/home.svg"
-              alt="Icon of a home"
+              alt="Icona d'una casa"
               className="navigator-icon"
             />
           </li>
           <li>
             <img
               src="/images/navigator/collection.svg"
-              alt="Icon of a dragon"
+              alt="Icona del cap d'un drac"
               className="navigator-icon"
             />
           </li>
           <li>
             <img
               src="/images/navigator/new.svg"
-              alt="Icon of a plus"
+              alt="Icona del símbol de sumar"
               className="navigator-icon"
             />
           </li>
           <li>
             <img
               src="/images/navigator/fight.svg"
-              alt="Icon of two swords as an X"
+              alt="Icona de dues espases creuades"
               className="navigator-icon"
             />
           </li>
           <li>
             <img
               src="/images/navigator/manifest.svg"
-              alt="Icon of a form"
+              alt="Icona d'un formulari"
               className="navigator-icon"
             />
           </li>
           <li>
             <img
               src="/images/navigator/contact.svg"
-              alt="Icon of a message"
+              alt="Icona d'una bafarada rectangular"
               className="navigator-icon"
             />
           </li>
