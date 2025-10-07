@@ -1,9 +1,26 @@
 import "./Navigator.css";
 
 const Navigator: React.FC = () => {
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+    const navigatorMobile = document.querySelector(".navigator--mobile");
+
+    if (!navigatorMobile) {
+      throw new Error("Could not find a mobile navigator element");
+    }
+
+    if (scrollY > 150) {
+      navigatorMobile.classList.add("nav--scrolled");
+    }
+
+    if (scrollY <= 149) {
+      navigatorMobile.classList.remove("nav--scrolled");
+    }
+  });
+
   return (
     <>
-      <nav className="navigator--mobile">
+      <nav className="navigator--mobile ">
         <ul className="navigator__list--mobile">
           <li>
             <img

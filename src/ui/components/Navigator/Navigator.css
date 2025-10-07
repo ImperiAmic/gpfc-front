@@ -1,5 +1,13 @@
-.navigator--mobile {
+.nav--scrolled {
+  background-color: var(--light-main);
+  width: 100%;
+  position: fixed;
+  top: 0;
   display: flex;
+  padding: 10px 0;
+
+  animation-duration: 0.5s;
+  animation-name: animate-fade-in;
 }
 
 .navigator__list--mobile {
@@ -18,7 +26,7 @@
   }
 
   .navigator--desktop {
-    display: flex;
+    display: block;
   }
 
   .navigator__list--desktop {
@@ -28,5 +36,14 @@
     grid-template-rows: repeat(3, 1fr);
     row-gap: 3px;
     column-gap: 10px;
+  }
+}
+
+@keyframes animate-fade-in {
+  0% {
+    top: -57px;
+  }
+  100% {
+    top: 0;
   }
 }
