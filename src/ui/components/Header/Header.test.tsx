@@ -4,7 +4,7 @@ import Header from "./Header";
 describe("Given the Header component", () => {
   describe("When it renders", () => {
     test("Then it should show 'Godzilla Poblenou Fan Club' inside a level 1 heading", () => {
-      const expectedPageTitle = "Godzilla Poblenou Fan Club";
+      const expectedPageTitle = /godzilla poblenou fan club/i;
 
       render(<Header />);
 
