@@ -1,3 +1,4 @@
+import { BrowserRouter } from "react-router";
 import { render, screen } from "@testing-library/react";
 import Header from "./Header";
 
@@ -6,7 +7,11 @@ describe("Given the Header component", () => {
     test("Then it should show 'Godzilla Poblenou Fan Club' inside a level 1 heading", () => {
       const expectedPageTitle = /godzilla poblenou fan club/i;
 
-      render(<Header />);
+      render(
+        <BrowserRouter>
+          <Header />
+        </BrowserRouter>,
+      );
 
       const pageTitle = screen.getByRole("heading", {
         name: expectedPageTitle,
@@ -20,7 +25,11 @@ describe("Given the Header component", () => {
       const expectedAltText =
         "Perfil del cap i part del coll del Godzilla sobre rodona vermella";
 
-      render(<Header />);
+      render(
+        <BrowserRouter>
+          <Header />
+        </BrowserRouter>,
+      );
 
       const image = screen.getByRole("img", {
         name: expectedAltText,
